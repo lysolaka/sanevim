@@ -91,6 +91,7 @@ return {
             nvim_lsp = "[LSP]",
             luasnip = "[LuaSnip]",
             path = "[Path]",
+            vimtex = item.menu,
             nvim_lsp_signature_help = "",
           })[entry.source.name]
           return item
@@ -101,7 +102,7 @@ return {
           { name = "nvim_lsp" }, { name = "luasnip" }
         },
         {
-          { name = "buffer" }, { name = "path" }
+          { name = "vimtex" }, { name = "buffer" }, { name = "path" }
         },
         {
           { name = "nvim_lsp_signature_help" }

@@ -29,6 +29,10 @@ return {
       "hrsh7th/cmp-path",
       "hrsh7th/cmp-nvim-lsp-signature-help",
       "saadparwaiz1/cmp_luasnip",
+      {
+        "micangl/cmp-vimtex",
+        ft = "tex",
+      },
     },
     opts = cfg["nvim-cmp"]
   },

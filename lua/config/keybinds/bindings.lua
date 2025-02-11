@@ -33,19 +33,4 @@ return {
     key = "gl",
     cmd = vim.diagnostic.open_float,
   },
-  -- texlab specific, will error on other servers (see :h vim.lsp.Client {supports_method})
-  ["textDocument/build"] = {
-    mode = "n",
-    key = "<localleader>ll",
-    cmd = function()
-      vim.cmd([[TexlabBuild]])
-    end,
-  },
-  ["textDocument/forwardSearch"] = {
-    mode = "n",
-    key = "<localleader>lg",
-    cmd = function()
-      vim.cmd([[TexlabForward]])
-    end,
-  },
 }

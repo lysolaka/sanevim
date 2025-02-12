@@ -10,7 +10,7 @@ return {
   },
   ["lualine"] = {
     options = {
-      component_separators = { left = "|", right = "|" },
+      component_separators = { left = "│", right = "│" },
       section_separators = { left = "", right = "" },
       ignore_focus = { "neo-tree" },
       always_divide_middle = false,

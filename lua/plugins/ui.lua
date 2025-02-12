@@ -9,7 +9,7 @@ return {
     priority = 1000,
     config = function()
       vim.cmd([[colorscheme tokyonight-night]])
-    end
+    end,
   },
   {
     "nvim-neo-tree/neo-tree.nvim",
@@ -22,13 +22,13 @@ return {
     keys = {
       { "<leader>e", "<cmd>Neotree<cr>" },
     },
-    opts = cfg["neo-tree"]
+    opts = cfg["neo-tree"],
   },
   {
     "nvim-lualine/lualine.nvim",
     dependencies = {
       "nvim-tree/nvim-web-devicons",
     },
-    opts = cfg["lualine"]
+    opts = cfg["lualine"],
   },
 }

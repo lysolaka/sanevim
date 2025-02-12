@@ -31,6 +31,7 @@ return {
     history = true,
     delete_check_events = "TextChanged",
     update_events = "TextChanged,TextChangedI",
+    store_selection_keys = "<Tab>"
   },
   ["neogen"] = {
     input_after_comment = false,
@@ -66,8 +67,8 @@ return {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
-          elseif ls.locally_jumpable(1) then
-            ls.jump(1)
+          -- elseif ls.locally_jumpable(1) then
+          --   ls.jump(1)
           else
             fallback()
           end
@@ -75,7 +76,21 @@ return {
         ["<S-Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_prev_item()
-          elseif ls.locally_jumpable(-1) then
+          -- elseif ls.locally_jumpable(-1) then
+          --   ls.jump(-1)
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+        ["<C-J>"] = cmp.mapping(function(fallback)
+          if ls.locally_jumpable(1) then
+            ls.jump(1)
+          else
+            fallback()
+          end
+        end, { "i", "s" }),
+        ["<C-K>"] = cmp.mapping(function(fallback)
+          if ls.locally_jumpable(-1) then
             ls.jump(-1)
           else
             fallback()
@@ -99,7 +114,10 @@ return {
       },
       sources = cmp.config.sources(
         {
-          { name = "nvim_lsp" }, { name = "luasnip" }
+          { name = "luasnip" }
+        },
+        {
+          { name = "nvim_lsp" }
         },
         {
           { name = "vimtex" }, { name = "buffer" }, { name = "path" }

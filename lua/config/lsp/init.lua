@@ -1,15 +1,6 @@
 local lspconfig = require("lspconfig")
 local cmp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 local servers = require("mason-lspconfig").get_installed_servers()
--- make a manual list because formatters are lsp servers apparently
--- local servers = {
---   "basedpyright",
---   "clangd",
---   "lua_ls",
---   "ruff",
---   "rust_analyzer",
---   "texlab",
--- }
 
 local function fetch_cfg(server)
   local exists, lsp_cfg = pcall(require, "config.lsp." .. server)

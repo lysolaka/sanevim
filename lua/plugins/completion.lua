@@ -8,7 +8,13 @@ return {
     lazy = true,
     version = "v2.*",
     build = "make install_jsregexp",
-    opts = cfg["LuaSnip"]
+    opts = cfg["LuaSnip"],
+    config = function(_, opts)
+      require("luasnip").setup(opts)
+      require("luasnip.loaders.from_lua").lazy_load({
+        paths = vim.fn.stdpath("config") .. "/lua/snippets/",
+      })
+    end,
   },
   {
     "danymat/neogen",
@@ -18,7 +24,7 @@ return {
     keys = {
       { "<leader>na", "<cmd>Neogen<CR>" }
     },
-    opts = cfg["neogen"]
+    opts = cfg["neogen"],
   },
   {
     "hrsh7th/nvim-cmp",
@@ -28,12 +34,9 @@ return {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
       "hrsh7th/cmp-nvim-lsp-signature-help",
+      "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
-      {
-        "micangl/cmp-vimtex",
-        ft = "tex",
-      },
     },
-    opts = cfg["nvim-cmp"]
+    opts = cfg["nvim-cmp"],
   },
 }

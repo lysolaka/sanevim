@@ -12,10 +12,10 @@ return {
   },
   {
     "williamboman/mason.nvim",
-    opts = cfg["mason"]
+    opts = cfg["mason"],
   },
   {
     "williamboman/mason-lspconfig.nvim",
-    opts = cfg["mason-lspconfig"]
+    opts = cfg["mason-lspconfig"],
   },
 }

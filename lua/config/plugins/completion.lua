@@ -114,13 +114,10 @@ return {
       },
       sources = cmp.config.sources(
         {
-          { name = "luasnip" }
+          { name = "luasnip" }, { name = "nvim_lsp" }
         },
         {
-          { name = "nvim_lsp" }
-        },
-        {
-          { name = "vimtex" }, { name = "buffer" }, { name = "path" }
+          { name = "buffer" }, { name = "path" }
         },
         {
           { name = "nvim_lsp_signature_help" }

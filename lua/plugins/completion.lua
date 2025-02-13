@@ -38,5 +38,22 @@ return {
       "saadparwaiz1/cmp_luasnip",
     },
     opts = cfg["nvim-cmp"],
+    config = function(_, opts)
+      local cmp = require("cmp")
+      cmp.setup(opts)
+      cmp.setup.filetype({ "tex" }, {
+        sources = cmp.config.sources(
+          {
+            { name = "luasnip" }
+          },
+          {
+            { name = "vimtex" }, { name = "nvim_lsp" }
+          },
+          {
+            { name = "buffer" }, { name = "path" }
+          }
+        )
+      })
+    end
   },
 }

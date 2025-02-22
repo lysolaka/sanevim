@@ -19,3 +19,6 @@ vim.diagnostic.config({
   },
   severity_sort = true
 })
+
+-- Visuals for rust Option and Result types
+vim.api.nvim_set_hl(0, "@lsp.typemod.enumMember.defaultLibrary.rust", { link = "Constant" })

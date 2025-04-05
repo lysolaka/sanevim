@@ -8,10 +8,15 @@ return {
     fmta([[
       %! TeX program = <>
       \documentclass{article}
+      \usepackage{amsmath}
       \usepackage{graphicx}
-      \usepackage{minted}
       \usepackage{xcolor}
       \usepackage{pgf}
+      \usepackage{float}
+      \usepackage{placeins}
+      \usepackage{subcaption}
+      \usepackage{minted}
+      \usepackage{titlesec}
       \usepackage[
         colorlinks=true,
         linkcolor=blue,
@@ -24,11 +29,32 @@ return {
         top=2cm,
         bottom=2cm
       ]{geometry}
+      \usepackage{lmodern}
+      \usepackage{mathptmx}
+      \usepackage[T1]{fontenc}
+      % \usepackage{fontspec}
+      % \setmonofont{SauceCodePro NFM} % lua or xe only!
+
       \setlength{\parindent}{0pt}
       \setlength{\parskip}{1em}
-      \usepackage[scaled=0.92]{heuristica}
 
-      \definecolor{mintedbg}{rgb}{0.9, 0.9, 0.9}
+      \definecolor{mintedbg}{rgb}{0.8, 0.8, 0.8}
+
+      \titleformat{\section}
+        {\normalfont\Large\bfseries}
+        {\thesection.}
+        {10pt}
+        {\vspace{-0.5em}}
+      \titleformat{\subsection}
+        {\normalfont\large\bfseries}
+        {\thesubsection.}
+        {10pt}
+        {\vspace{-0.5em}}
+      \titleformat{\subsubsection}
+        {\normalfont\normalsize\bfseries}
+        {\thesubsubsection.}
+        {10pt}
+        {\vspace{-0.5em}}
 
       <>
     ]], { i(1), i(0) })

@@ -29,11 +29,16 @@ return {
         top=2cm,
         bottom=2cm
       ]{geometry}
+      % pdflatex:
       \usepackage{lmodern}
-      \usepackage{mathptmx}
+      \usepackage{newtxtext}
       \usepackage[T1]{fontenc}
+      % lualatex or xelatex:
       % \usepackage{fontspec}
-      % \setmonofont{SauceCodePro NFM} % lua or xe only!
+      % \usepackage{unicode-math}
+      % \setmainfont{Nimbus Roman}
+      % \setmathfont{NewComputerModernMath}
+      % \setmonofont{SauceCodePro NFM}
 
       \setlength{\parindent}{0pt}
       \setlength{\parskip}{1em}

@@ -1,16 +1,5 @@
 return {
   ["mason"] = {
-    ensure_installed = {
-      "basedpyright",
-      "clangd",
-      -- "latexindent",
-      "lua_ls",
-      "ruff",
-      "rust_analyzer",
-      "texlab",
-    },
-  },
-  ["mason-lspconfig"] = {
     ui = {
       icons = {
         package_installed = "✓",
@@ -18,5 +7,16 @@ return {
         package_uninstalled = "✗",
       },
     },
+  },
+  ["mason-lspconfig"] = {
+    ensure_installed = {
+      "basedpyright",
+      "clangd",
+      "lua_ls",
+      "ruff",
+      "rust_analyzer",
+      "texlab",
+    },
+    automatic_enable = false,
   },
 }

@@ -39,4 +39,17 @@ return {
       \end{minted}
     ]], { i(1), i(2), i(0) })
   ),
+  s({ trig = "tab", dscr = "Table environment" },
+    fmta([[
+      \begin{table}[!ht]
+        \centering
+        \renewcommand{\arraystretch}{1.15}
+        \begin{tabular}{<>}
+          <>
+        \end{tabular}
+        \caption{<>}
+        \label{tab:<>}
+      \end{table}
+    ]], { i(1), i(0), i(2), i(3) })
+  ),
 }

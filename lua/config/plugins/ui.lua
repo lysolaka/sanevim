@@ -1,4 +1,12 @@
 return {
+  ["tokyonight"] = {
+    transparent = false,
+    styles = {
+      -- sidebars = "transparent",
+      -- floats = "transparent",
+    },
+    style = "night",
+  },
   ["neo-tree"] = {
     filesystem = {
       filtered_items = {

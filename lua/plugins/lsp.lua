@@ -18,4 +18,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     opts = cfg["mason-lspconfig"],
   },
+  {
+    "https://github.com/gentoo/gentoo-syntax",
+  },
 }

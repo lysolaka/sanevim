@@ -15,7 +15,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end
 
     for cap, bind in pairs(bindings) do
-      if client.supports_method(cap) then
+      if client:supports_method(cap) then
         vim.keymap.set(bind.mode, bind.key, bind.cmd, opts)
       end
     end

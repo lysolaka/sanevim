@@ -1,8 +1,8 @@
 return {
   ["tokyonight"] = {
-    transparent = false,
+    transparent = true,
     styles = {
-      -- sidebars = "transparent",
+      sidebars = "transparent",
       -- floats = "transparent",
     },
     style = "night",

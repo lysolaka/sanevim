@@ -1,8 +1,19 @@
-> [!WARNING]
-> The config is undergoing a serious reconstruction. The latest working commit was `https://github.com/lysolaka/sanevim/commit/a13b790df590344baada2ae552a7f992da3f73ca`
-
 # SaneVim
 This repository is meant to be my personalised Neovim config. I've put it as public so others might learn from it.
 
 ## Why "SaneVim"
-A lot of ready neovim configs have "Vim" appended to their names like "LazyVim" or "LunarVim". The "Sane" part is because I almost lost my sanity doing it from scratch, but also because the contents of this config are pretty reasonable: not much bloat, good looks (I'm pedantic) and simplicity.
+A lot of ready neovim configs have "Vim" appended to their names like "LazyVim" or "LunarVim". The "Sane" part is because I almost lost my sanity doing it from scratch, but also because the contents of this config are pretty reasonable: not much bloat, good looking and simple scripts (I'm pedantic).
+
+# TODOs
+
+This config is suitable for daily use, but there is still some work to be done. Mainly:
+- [ ] Properly test `vimtex`, fix `latexindent.pl`'s tab indentation, and other LaTeX related things.
+- [ ] Make highlight groups from `tree-sitter-comment` of higher priority than LSP. Now the LSP overrides the special highlighting of TODO or FIXME comments.
+- [ ] See [`lua/config/lsp/basedpyright.lua:12`](https://github.com/lysolaka/sanevim/blob/main/lua/config/lsp/basedpyright.lua#L12).
+- [ ] Look into Python formatting.
+- [ ] Write snippets for `LuaSnip`. In the past there were some snippets, but they are no longer useful to me. I will get to it on a case by case basis: if I find a need for a new snippet - I will make one.
+
+Other TODOs are:
+- [ ] Properly comment all files and explain what's going on.
+- [ ] Present features and looks of this neovim config.
+- [ ] Do a plugin list.

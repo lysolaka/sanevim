@@ -1,7 +1,7 @@
 -- General nvim Configuration --
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g["mapleader"] = " "
+vim.g["maplocalleader"] = "\\"
 
 vim.opt["termguicolors"] = true
 vim.opt["autoindent"] = true

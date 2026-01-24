@@ -26,9 +26,8 @@ return {
       ensure_installed = {
         "basedpyright",
         "clangd",
-        "lua-language-server",
+        "lua_ls",
         "rust_analyzer",
-        "tree-sitter-cli",
       },
       automatic_enable = false,
     },

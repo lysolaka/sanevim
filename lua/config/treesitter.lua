@@ -37,8 +37,6 @@ if vim.fn.executable("tree-sitter") == 0 then
   end)
 end
 
--- TODO: make highlight groups from tree-sitter-comment of higher priority than LSP
-
 -- install the parsers, `ts.install()` internally skips already installed ones
 ts.install(parsers)
 local installed = ts.get_installed()

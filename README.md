@@ -8,7 +8,7 @@ A lot of ready neovim configs have "Vim" appended to their names like "LazyVim" 
 
 This config is suitable for daily use, but there is still some work to be done. Mainly:
 - [ ] Properly test `vimtex`, fix `latexindent.pl`'s tab indentation, and other LaTeX related things.
-- [ ] Make highlight groups from `tree-sitter-comment` of higher priority than LSP. Now the LSP overrides the special highlighting of TODO or FIXME comments.
+- [x] Make highlight groups from `tree-sitter-comment` of higher priority than LSP. Now the LSP overrides the special highlighting of TODO or FIXME comments.
 - [ ] See [`lua/config/lsp/basedpyright.lua:12`](https://github.com/lysolaka/sanevim/blob/main/lua/config/lsp/basedpyright.lua#L12).
 - [ ] Look into Python formatting.
 - [ ] Write snippets for `LuaSnip`. In the past there were some snippets, but they are no longer useful to me. I will get to it on a case by case basis: if I find a need for a new snippet - I will make one.

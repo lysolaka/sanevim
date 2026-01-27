@@ -27,6 +27,7 @@ return {
         "basedpyright",
         "clangd",
         "lua_ls",
+        "ruff",
         "rust_analyzer",
       },
       automatic_enable = false,

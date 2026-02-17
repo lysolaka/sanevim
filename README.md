@@ -7,7 +7,7 @@ A lot of ready neovim configs have "Vim" appended to their names like "LazyVim" 
 # TODOs
 
 This config is suitable for daily use, but there is still some work to be done. Mainly:
-- [ ] Setup `texlab` with `tex-fmt` as the formatter, remove `vimtex`.
+- [x] Setup `texlab` with `tex-fmt` as the formatter, remove `vimtex`.
 - [x] Make highlight groups from `tree-sitter-comment` of higher priority than LSP. Now the LSP overrides the special highlighting of TODO or FIXME comments.
 - [x] Use `ruff` for Python formatting.
 - [ ] Write snippets for `LuaSnip`. In the past there were some snippets, but they are no longer useful to me. I will get to it on a case by case basis: if I find a need for a new snippet - I will make one.

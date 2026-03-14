@@ -38,4 +38,8 @@ return {
     "gentoo/gentoo-syntax",
     event = "BufEnter",
   },
+  {
+    "https://github.com/lysolaka/vim-gas",
+    ft = "gas",
+  },
 }

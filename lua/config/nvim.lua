@@ -3,6 +3,7 @@
 vim.g["mapleader"] = " "
 vim.g["maplocalleader"] = "\\"
 
+vim.o["exrc"] = true
 vim.o["termguicolors"] = true
 vim.o["autoindent"] = true
 vim.o["smartindent"] = true

@@ -177,7 +177,7 @@ return {
     texlab = {
       build = {
         executable = "latexmk",
-        args = { "-verbose", "-pdflua", "-file-line-error", "-synctex=1", "-interaction=nonstopmode", "-auxdir=%f.auxdir", "%f" },
+        args = { "-verbose", "-pdflua", "-latexoption=-shell-escape", "-file-line-error", "-synctex=1", "-interaction=nonstopmode", "-auxdir=%f.auxdir", "%f" },
         onSave = false,
         forwardSearchAfter = true,
       },

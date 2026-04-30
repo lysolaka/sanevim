@@ -1,7 +1,7 @@
 -- UI and Visuals --
 
 -- setup the theme
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("tokyonight-night")
 
 -- setup diagnostic boxes
 vim.diagnostic.config({

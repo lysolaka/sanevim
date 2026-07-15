@@ -6,7 +6,5 @@ require("config.lazy")
 require("config.ui")
 -- LSP Configuration --
 require("config.lsp")
--- Treesitter Configuration --
---require("config.treesitter")
 -- Keybindings --
 require("config.keybinds")

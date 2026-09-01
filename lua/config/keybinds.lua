@@ -29,21 +29,6 @@ local lsp_keybinds = {
     key = "<F2>",
     cmd = vim.lsp.buf.rename,
   },
-  -- texlab specific
-  ["textDocument/build"] = {
-    mode = "n",
-    key = "<localleader>ll",
-    cmd = function()
-      vim.cmd("TexlabBuild")
-    end,
-  },
-  ["textDocument/forwardSearch"] = {
-    mode = "n",
-    key = "<localleader>lg",
-    cmd = function()
-      vim.cmd("TexlabForward")
-    end,
-  },
 }
 
 -- table with other bindings to be set on `LspAttach` autocmd

@@ -37,7 +37,7 @@ return {
     },
     opts = {
       options = {
-        theme = "tokyonight",
+        theme = vim.o["background"] == "dark" and "tokyonight-night" or "tokyonight-day",
         component_separators = { left = "│", right = "│" },
         section_separators = { left = "", right = "" },
         ignore_focus = { "neo-tree" },

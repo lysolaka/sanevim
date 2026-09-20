@@ -29,6 +29,7 @@ return {
         "lua_ls",
         "ruff",
         "rust_analyzer",
+        "tinymist",
       },
       automatic_enable = false,
     },
